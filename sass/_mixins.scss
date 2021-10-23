@@ -7,7 +7,7 @@ $break-xs: 600px !default;
 
 @mixin media($screen) {
 
-    //large
+    //largeba
     @if ($screen)==lg {
         @media (max-width: $break-lg) {
             @content;
