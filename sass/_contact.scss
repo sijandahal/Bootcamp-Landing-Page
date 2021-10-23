@@ -1,0 +1,87 @@
+.contact-block {
+    margin: 100px 0;
+    .container {
+        @extend %flexbox;
+        @include align-items(center);
+        grid-gap: 66px;
+        @include media(md) {
+            flex-direction: column;
+        }
+    }
+    .app-form {
+        flex: 1;
+        @include media(md) {
+            max-width: 70%;
+            width: 100%;
+        }
+
+        @include media(sm) {
+            max-width: 100%;
+            width: 100%;
+        }
+    }
+    .map {
+        iframe {
+            max-width: 100%;
+        }
+    }
+}
+
+.contactwrapper.left {
+    display: flex;
+    flex-direction: column;
+}
+
+.app-title {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    color: #ff525d;
+    margin-bottom: 50px;
+    font-size: 26px;
+}
+.app-contact {
+    margin-top: auto;
+    font-size: 8px;
+    color: #888;
+}
+.app-form-group {
+    margin-bottom: 15px;
+}
+.app-form-group.message {
+    margin-top: 40px;
+}
+.app-form-group.buttons {
+    margin-bottom: 0;
+    text-align: right;
+}
+.app-form-control {
+    width: 100%;
+    padding: 10px 0;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #666;
+    color: #ddd;
+    font-size: 14px;
+    text-transform: uppercase;
+    outline: none;
+    transition: border-color 0.2s;
+    &::placeholder {
+        color: #666;
+    }
+    &:focus {
+        border-bottom-color: #ddd;
+    }
+}
+.app-form-button {
+    background: none;
+    border: none;
+    color: #ff525d;
+    font-weight: 500;
+    font-size: 14px;
+    cursor: pointer;
+    outline: none;
+    &:hover {
+        color: #b9134f;
+    }
+}

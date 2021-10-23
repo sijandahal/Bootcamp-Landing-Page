@@ -1,0 +1,47 @@
+//media queries
+
+$break-lg: 1200px !default;
+$break-md: 1024px !default;
+$break-sm: 768px !default;
+$break-xs: 600px !default;
+
+@mixin media($screen) {
+    //large
+    @if ($screen) == lg {
+        @media (max-width: $break-lg) {
+            @content;
+        }
+    }
+    //medium
+    @else if ($screen) == md {
+        @media (max-width: $break-md) {
+            @content;
+        }
+    }
+    //small
+    @else if ($screen) == sm {
+        @media (max-width: $break-sm) {
+            @content;
+        }
+    }
+    //extra small
+
+    @else if ($screen) == xs {
+        @media (max-width: $break-xs) {
+            @content;
+        }
+    }
+}
+
+@mixin box-shadow($box-shadow...) {
+    -webkit-box-shadow: $box-shadow;
+    box-shadow: $box-shadow;
+}
+
+@mixin transition($transition...) {
+    transition: $transition;
+}
+
+@mixin border-radius($radius...) {
+    border-radius: $radius;
+}

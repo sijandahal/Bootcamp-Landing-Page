@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+body {
+    font-size: 16px;
+    font-family: $primary-font;
+    background: #fafafa;
+}
+
+.container {
+    max-width: 1148px;
+    width: 100%;
+    margin: auto;
+    padding: 0 15px;
+    @include media(sm) {
+        padding: 0 29px;
+    }
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    font-family: $secondary-font;
+    font-weight: 500;
+    color: $color-white;
+}
+
+svg,
+figure {
+    vertical-align: top;
+}
+
+.btn {
+    background-color: $color-white;
+    color: $light-red;
+    font-weight: 600;
+    padding: 16px 41px;
+    border-radius: 50px;
+    @include transition(all ease 0.35s);
+    &:hover {
+        background: $very-light-red;
+        color: $color-white;
+    }
+}
+.btn-border {
+    background-color: transparent;
+    font-weight: 600;
+    padding: 16px 41px;
+    border-radius: 50px;
+    border: 1px solid $color-white;
+    @include transition(all ease 0.35s);
+    &:hover {
+        background: $color-white;
+        color: $light-red;
+    }
+}
+
+h1 {
+    font-size: 3.75em;
+    color: $color-white;
+    @include media(sm) {
+        font-size: 2.313em;
+    }
+}
+
+h2 {
+    font-size: 2.5em;
+    color: $very-dark-blue;
+    @include media(sm) {
+        font-size: 1.688em;
+    }
+}
+
+h3 {
+    font-size: 1.875em;
+    color: $very-dark-blue;
+}
+h4 {
+    font-size: 2.3em;
+    color: $very-dark-blue;
+}
+h5 {
+    font-size: 1em;
+}
+
+p {
+    letter-spacing: 0.2px;
+    line-height: 26px;
+    font-family: $primary-font;
+    @include media(sm) {
+        font-size: 0.938em;
+    }
+}
