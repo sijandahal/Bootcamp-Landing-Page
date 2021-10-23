@@ -25,17 +25,21 @@
 
               </li>
               <li class="nav--links ">
-                <a href="#" class="nav--items">About Us</a>
+                <a href="#about-us" class="nav--items">About Us</a>
 
               </li>
 
               <li class="nav--links">
-                <a href="#" class="nav--items">Advisors</a>
+                <a href="#advisors" class="nav--items">Advisors</a>
               </li>
 
               </li>
               <li class="nav--links">
-                <a href="#" class="nav--items">FAQ</a>
+                <a href="#faqs" class="nav--items">FAQ</a>
+
+              </li>
+              <li class="nav--links">
+                <a href="#contact-block" class="nav--items">Contact</a>
 
               </li>
 
@@ -87,8 +91,31 @@
       </div>
     </div>
   </div>
+
+  <section class="search-form">
+    <div class="container">
+    <form action="" method="GET" name="search" role="search">
+      <p class="inp-wrap search-wrap">
+        <label for="search-field" class="search-label">Find</label>
+        <input type="search" name="search-term" id="search-field" placeholder="Search for courses" /></p>
+      <p class="inp-wrap cat-wrap">
+        <label for="categories" class="search-label">in</label>
+        <select name="search categories" id="categories">
+          <option value="app" selected>App Developement</option>
+          <option value="prj">Project Management</option>
+          <option value="backend">backend Developement</option>
+        </select>
+      </p>
+      <p class="inp-wrap submit-wrap">
+        <button class="btn">
+        Search
+        </button>
+      </p>
+    </form>
+  </div>
+  </section> 
   <!-- //end of banner -->
-  <div class="description">
+  <div class="description" id = "about-us">
     <div class="container">
       <h2>About The Bootcamp</h2>
       <div class="desc--wrapper">
@@ -124,7 +151,7 @@
   </div>
   <!-- End of Description -->
 
-  <div class="state">
+  <div class="state" id = "advisors">
     <div class="container">
       <div class="state--wrapper">
         <div class="button-wrap">
@@ -142,7 +169,7 @@
     </div>
   </div>
 
-  <section class="contact-block">
+  <section class="contact-block" id = "contact-block">
 
     <div class="container">
       <div class="contactwrapper left">
@@ -177,7 +204,7 @@
   </section>
 
   <!-- End of desc two -->
-  <div class="faq-container">
+  <div class="faq-container" id = "faqs">
     <div class="container">
       <h2>Frequently Asked Questions</h2>
       <div class="accordion">
@@ -253,6 +280,9 @@
     </div>
   </footer>
   <div class="overlay"></div>
+  <button class="back-to-top">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g transform="translate(-1789 -1176)"><rect width="24" height="2.667" transform="translate(1789 1176)" fill="#fff"></rect><path d="M-215.453,382.373-221.427,372l-5.973,10.373h4.64v8.293h2.667v-8.293Z" transform="translate(2022.427 809.333)" fill="#fff"></path></g></svg>
+</button>
   <script src="./script.js"></script>
 </body>
 
