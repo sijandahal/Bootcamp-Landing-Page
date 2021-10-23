@@ -198,7 +198,7 @@ p {
   background-repeat: no-repeat;
   min-height: 690px;
   border-bottom-left-radius: 75px; }
-  @media (max-width: 600px) {
+  @media (max-width: 768px) {
     .banner {
       background: url(../images/bg-pattern-intro.svg), linear-gradient(360deg, #ff3d54 17%, #ff8f70 55%);
       background-position: 39% 38%;
